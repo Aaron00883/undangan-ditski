@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- Lightbox2 CSS (sudah ada) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dita & Riski Wedding</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
+  
+<!-- Ekko Lightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.css" rel="stylesheet">
+
+</head>
+
+  <body>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-content-center text-white">
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Dita & Riski</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+
+        <!-- Countdown -->
+        <div class="countdown-container my-4">
+          <div class="countdown-box"><span id="days">150</span><small>Hari</small></div>
+          <div class="countdown-box"><span id="hours">22</span><small>Jam</small></div>
+          <div class="countdown-box"><span id="minutes">30</span><small>Menit</small></div>
+          <div class="countdown-box"><span id="seconds">15</span><small>Detik</small></div>
+        </div>
+
+        <a href="#" class="btn btn-lg mt-4" onclick="startFullAutoScroll(event)">Lihat Undangan</a>
+
+
+      </main>
+    </section>
+
+    <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+        <!-- Ekko Lightbox JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+        <script>
+          $(document).on('click', '[data-bs-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+          });
+        </script>
+
+  <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top mynavbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">Ditski</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ditski</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="navbar-nav ms-auto">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#info">Info</a>
+        <a class="nav-link" href="#quotes">Quotes</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#rsvp">RSVP</a>
+        <a class="nav-link" href="#gifts">Gifts</a>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+ <section id="home" class="home">
+  <div class="conteiner">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <h2>Acara Pernikahan</h2>
+        <h3>Diselenggarakan pada 24 Desember 2025 di Banyuwangi, Jawa Timur</h3>
+        <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang bapak/ibu, 
+        Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+      </div>
+    </div>
+
+    <div class="row couple ">
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-8 text-end">
+            <h3>Muhammad Riski</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptate numquam officiis distinctio, fugit adipisci totam nam nostrum modi ducimus iste consequatur corporis facilis, sequi doloremque labore ipsum, ad repellat!</p>
+            <p>Putra dari bpk. lorem <br>dan <br>Ibu Ipsum</p>
+          </div>
+          <div class="col-4">
+            <img src="img/riski.png" alt="Muhammad Riski" class="img-responsive rounded-circle">
+          </div>
+        </div>
+      </div>
+      
+      <span class="heart"><i class="bi bi-suit-heart-fill"></i></span>
+
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/dita.png" alt="Dita Putri" class="img-responsive rounded-circle">
+          </div>
+          <div class="col-8">
+            <h3>Dita Putri</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptate numquam officiis distinctio, fugit adipisci totam nam nostrum modi ducimus iste consequatur corporis facilis, sequi doloremque labore ipsum, ad repellat!</p>
+            <p>Putra dari bpk. Ipsum <br>dan <br>Ibu lorem</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ 
+ <section id="info" class="info">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h2>Informasi Acara</h2>
+        <p class="alamat">Alamat: Dialoog Banyuwangi, Hotel. <br>Jl. Yos Sudarso, Lingkungan Sukowidi, Klatak, Kec. Kalipuro, Kabupaten Banyuwangi, Jawa Timur </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light mb-5">
+  <div class="card-header">Akad Nikah</div>
+  <div class="card-body">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <i class="bi bi-clock d-block"></i>
+        <span>08.00 - 10.00</span>
+      </div>
+      <div class="col-md-6">
+        <i class="bi bi-calendar3 d-block"></i>
+        <span>Selasa, 18 November 2025</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan
+    seluruh prosesi.
+  </div>
+</div>
+      </div>
+      <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light">
+  <div class="card-header">Resepsi</div>
+  <div class="card-body">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <i class="bi bi-clock d-block"></i>
+        <span>11.00 - Selesai</span>
+      </div>
+      <div class="col-md-6">
+        <i class="bi bi-calendar3 d-block"></i>
+        <span>Selasa, 18 November 2025</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-footer">
+    Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan
+    seluruh prosesi.
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section id="quotes" class="quotes pt-5 pb-0">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span>D & R</span>
+        <h4 class="quote-nama">Dita & Riski</h4>
+        <h4>8 November 2025</h4>
+        <p>Istri- istrimu adalah ladang bagimu, maka datangilah ladangmu itu kapan saja dan dengan cara yang kamu sukai. Dan utamakanlah (yang baik) untuk dirimu. Bertakwalah kepada Allah dan ketahuilah bahwa kamu (kelak) akan menemui-Nya. Dan sampaikanlah kabar gembira kepada orang yang beriman.</p>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section id="gallery" class="gallery pt-3 pb-5">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span>Memory Kisah Kami</span>
+        <h4 class="section-title">Gallery Foto</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam earum eius ad corporis</p>
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+      <div class="col mt-3">
+        <a href="img/gallery/1.png" data-lightbox="galeri" data-title="Dita & Riski 1" data-gallery="mygallery">
+  <img src="img/gallery/thumbnail/1.png" class="img-fluid w-100 rounded">
+</a>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section id="rsvp" class="rsvp-modern py-5">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="text-center text-light mb-5 ">
+      <h2 class="fw-bold display-5 font-sacramento">Konfirmasi Kehadiran</h2>
+      <p class="l">Bantu kami menyiapkan tempat terbaik untuk Anda.</p>
+    </div>
+
+    <!-- Form RSVP -->
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-6">
+        <div class="glass-card p-5 text-light">
+          <h4 class="text-center text-gray mb-4">Isi Form RSVP</h4>
+          <form>
+            <div class="mb-3">
+              <label for="nama" class="form-label ">Nama</label>
+              <input type="text" class="form-control" id="nama" placeholder="Nama lengkap Anda" required>
+            </div>
+            <div class="mb-3">
+              <label for="jumlah" class="form-label ">Jumlah Tamu</label>
+              <input type="number" class="form-control" id="jumlah" min="1" value="1">
+            </div>
+            <div class="mb-4">
+              <label for="status" class="form-label ">Kehadiran</label>
+              <select class="form-select" id="status">
+                <option value="hadir">Hadir</option>
+                <option value="tidak_hadir">Tidak Hadir</option>
+                <option value="ragu">Masih Ragu</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-light w-100 fw-bold">Kirim Konfirmasi</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 2 Gambar Card Bersebelahan -->
+<div class="row justify-content-center mb-4">
+  <div class="col-md-6 mb-2">
+    <div class="glass-card overflow-hidden p-0">
+      <div class="image-wrapper">
+        <img src="img/card.png" alt="RSVP Visual 1" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 mb-2">
+    <div class="glass-card overflow-hidden p-0">
+      <div class="image-wrapper">
+        <img src="img/card.png" alt="RSVP Visual 2" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="glass-card overflow-hidden h-100 text-center text-light">
+  <div class="p-3 ">
+    <i class="bi bi-heart-fill display-4 mb-3" style="color: #f4d58d;"></i>
+    <p class="mb-0 ">"Terima kasih atas doa & kehadiranmu."</p>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<section class="bg-end">
+
+
+<!-- Info Cards -->
+   <div class="row justify-content-center mb-5">
+  <div class="col-md-10">
+    <div class="glass-card p-4 text-center text-light">
+      <h4 class="mb-3" style="color: #ffffff;">📍 Lokasi Acara</h4>
+      <p class="">Hotel Dialoog Banyuwangi, Jawa Timur</p>
+      <a href="https://maps.app.goo.gl/UJVY1SPamKkpVe269" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+        <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda dilangsungkan pernikahan, boleh jadi anda salah jadwal, atau salah tempat.</p>
+
+      <!-- Google Maps Embed -->
+      <div class="col-md-8 col-lg-6 ratio ratio-16x9 rounded shadow overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0293535305186!2d114.37778321477556!3d-8.18311339412561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1570bce8c1e45%3A0x39f0b6e48c50ea47!2sDialoog%20Banyuwangi!5e0!3m2!1sid!2sid!4v1718800000000!5m2!1sid!2sid"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <p class="mt-3"><small class="">Silakan geser, zoom, atau klik di pojok kanan atas untuk buka besar.</small></p>
+    </div>
+  </div>
+</div>
+</section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="countdown.js"></script>
+
+      <script>
+  const stickyTop = document.querySelector('.sticky-top');
+  const offcanvas = document.querySelector('.offcanvas');
+
+  offcanvas.addEventListener('show.bs.offcanvas', function () {
+    stickyTop.style.overflow = 'visible';
+  });
+
+  offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+    stickyTop.style.overflow = 'hidden';
+  });
+</script>
+
+
+  
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const stickyTop = document.querySelector('.sticky-top');
+    const offcanvas = document.querySelector('.offcanvas');
+
+    if (offcanvas && stickyTop) {
+      offcanvas.addEventListener('show.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'visible';
+      });
+
+      offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+        stickyTop.style.overflow = 'hidden';
+      });
+    }
+  });
+</script>
+
+<!-- Audio -->
+<audio id="backsound" loop>
+  <source src="audio/musikk.mp3" type="audio/mpeg">
+  Browser Anda tidak mendukung audio.
+</audio>
+
+
+<!-- Tombol Kontrol Musik -->
+<button id="musicToggle" class="music-btn" onclick="toggleMusic()">
+  <i class="bi bi-volume-up-fill"></i>
+</button>
+
+<script>
+  const audio = document.getElementById("backsound");
+  const toggleBtn = document.getElementById("musicToggle");
+  let isPlaying = false;
+
+  function toggleMusic() {
+    if (isPlaying) {
+      audio.pause();
+      toggleBtn.innerHTML = '<i class="bi bi-volume-mute-fill"></i>';
+    } else {
+      audio.play();
+      toggleBtn.innerHTML = '<i class="bi bi-volume-up-fill"></i>';
+    }
+    isPlaying = !isPlaying;
+  }
+
+  // Auto play saat sudah unlock scroll (klik lihat undangan)
+  function startFullAutoScroll(event) {
+    event.preventDefault();
+    if (autoScrollActive) return;
+
+    toggleMusic(); // auto nyalakan musik
+
+    // ...lanjutan scroll otomatis kamu
+  }
+</script>
+
+<!-- Lightbox2 JS (belum ada) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+
+</body>
+
+<script>
+  const rootElement = document.querySelector(":root");
+  let autoScrollActive = false;
+
+  function disableScroll() {
+    document.body.classList.add("lock-scroll");
+    rootElement.style.scrollBehavior = "auto";
+    window.onscroll = () => window.scrollTo(0, 0);
+  }
+
+  function enableScroll() {
+    document.body.classList.remove("lock-scroll");
+    window.onscroll = null;
+    rootElement.style.scrollBehavior = "smooth";
+  }
+
+  function startFullAutoScroll(event) {
+    event.preventDefault();
+    if (autoScrollActive) return;
+
+    autoScrollActive = true;
+    enableScroll();
+
+    const targetPos = document.body.scrollHeight;
+    let stop = false;
+
+    const stopScroll = () => {
+      stop = true;
+      autoScrollActive = false;
+    };
+
+    ["wheel", "touchstart", "mousedown", "keydown"].forEach(evt =>
+      window.addEventListener(evt, stopScroll, { once: true })
+    );
+
+    const step = () => {
+      if (stop) return;
+
+      const distance = targetPos - window.pageYOffset - window.innerHeight;
+      if (distance <= 1) {
+        autoScrollActive = false;
+        return;
+      }
+
+      window.scrollBy(0, distance * 0.03);
+      requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+    localStorage.setItem('opened', 'true'); // agar tidak mengunci lagi saat reload
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("opened")) {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
+  });
+</script>
+
+
+</html>
